@@ -79,7 +79,8 @@ main {
 .card {
     background-color: var(--white);
     height: auto;
-    width: 24.75rem;
+    min-width: 24.75rem;
+    max-width: 26.125rem;
     border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0.2rem 0.2rem 1rem var(--slate-blue);
@@ -94,6 +95,10 @@ main {
     height: auto;
     width: 100%;
     z-index: 1;
+}
+
+.img-main-tablet-desktop {
+    display: none;
 }
 
 .img-overlay {
@@ -132,4 +137,20 @@ hr {
     border-radius: 50%;
     height: auto;
     width: 3rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 51.25rem) {
+    .img-main-mobile {
+        display: none;
+    }
+
+    .img-main-tablet-desktop {
+        display: block;
+    }
+
+    .img-overlay {
+        bottom: -0.1rem;
+    }
 }
