@@ -1,0 +1,45 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --off-white: #f2f5f9;
+    --white: #fff;
+    --dark-blue: #111729;
+    --slate-blue: #4a5567;
+}
+
+@font-face {
+    font-family: "Lato Regular";
+    src: url(./fonts/lato-v25-latin-regular.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Lato Bold";
+    src: url(./fonts/lato-v25-latin-700.woff2) format("woff2");
+}
+
+/* Typography */
+
+.author-info {
+    font-family: "Lato Regular", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    color: rgb(55, 65, 81);
+    text-decoration: underline;
+}
+
+/* Main */
